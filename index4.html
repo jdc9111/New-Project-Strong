@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head section remains the same until the waitlist-form style -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Project Strong - A specialized strength and conditioning program for older adults focusing on building strength, improving mobility, and enhancing overall well-being.">
     <title>Project Strong - Strength and Conditioning for Older Adults</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -22,7 +20,7 @@
             align-items: center;
         }
         .navbar-brand img {
-            height: 90px;
+            height: 60px;
             width: auto;
             margin-right: 10px;
         }
@@ -61,61 +59,34 @@
             padding: 20px;
             margin-bottom: 2rem;
         }
-        .skip-link {
-            position: absolute;
-            left: -9999px;
-            z-index: 1000;
+        #scheduleWidget {
+            display: none;
+            margin-top: 20px;
         }
-        .skip-link:focus {
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            padding: 8px;
-            background: white;
-            border: 2px solid var(--primary-color);
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
         }
-        .waitlist-button-container {
-            text-align: center;
-            margin: 2rem 0 1rem 0;
-        }
-        .waitlist-button {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            font-size: 1.1rem;
-            font-weight: 500;
-            text-decoration: none;
-            border-radius: 4px;
-            background-color: #2e7d32;
-            color: white !important;
-            border: none;
-            transition: all 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .waitlist-button:hover {
-            background-color: #3d8940;
-            transform: translateY(-1px);
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        .btn-primary:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
         }
     </style>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
-    
-    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="pstong_logo.jpg" alt="Project Strong Logo" width="90" height="90">
+                <img src="pstong_logo_with_light_gray_background_rounded.png"Project Strong Logo">
                 <span>Project Strong</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" aria-current="page">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#enrollment">Enrollment</a>
@@ -136,47 +107,47 @@
                     <p>Strength and Conditioning Program for Older Adults</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="5760.webp" alt="Senior woman performing a deadlift with proper form" class="hero-image">
+                    <img src="5760.webp" alt="Woman lifting weights" class="hero-image">
                 </div>
             </div>
         </div>
     </header>
 
-    <main id="main" class="container my-5">
-        <section id="about" class="mb-5" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Us</h2>
+    <main class="container my-5">
+        <section id="about" class="mb-5">
+            <h2>About Us</h2>
             <p>Project Strong is dedicated to helping older adults improve their strength, mobility, and overall well-being. Our tailored programs are designed to meet the unique needs of each individual, promoting a healthier and more active lifestyle.</p>
             
             <h3>Why Strength Training?</h3>
             <p>Strength training is essential for older adults as it helps combat age-related muscle loss and maintain overall physical strength and mobility. As we age, our bodies naturally lose muscle mass, a process known as sarcopenia, which can lead to decreased mobility, reduced bone density, and an increased risk of falls and injuries. By engaging in regular strength training exercises, older adults can build and preserve muscle mass, improve balance and coordination, and enhance their overall functional abilities. This not only allows them to maintain their independence and quality of life but also reduces the risk of chronic conditions such as osteoporosis, arthritis, and cardiovascular diseases. Strength training can also boost metabolism, improve posture, and provide a sense of empowerment and confidence, making it a crucial component of a healthy lifestyle for the aging population.</p>
         </section>
 
-        <section id="enrollment" class="mb-5" aria-labelledby="enrollment-heading">
-            <h2 id="enrollment-heading">Enrollment Information</h2>
+        <section id="enrollment" class="mb-5">
+            <h2>Enrollment Information</h2>
             <div class="enrollment-info">
                 <h3>Important Notice for New Participants</h3>
-                <p><strong>Waiting List:</strong> Due to high demand, we currently have a waiting list for new participants. Please click the button below to join our waiting list.</p>
+                <p><strong>Waiting List:</strong> Due to high demand, we currently have a waiting list for new participants. We appreciate your patience and will contact you as soon as a spot becomes available.</p>
                 <p><strong>Health Screening:</strong> To ensure your safety and tailor our program to your needs, all new participants must undergo a health screening before starting the program. This screening helps us understand your current fitness level and any health considerations.</p>
-                <p><strong>Fundamentals Training:</strong> New members are required to complete our fundamentals training. These classes introduce you to proper techniques, safety measures, and the basics of our strength training program. This ensures you have a strong foundation to build upon in our regular classes.</p>
-                
-                <a href="http://docs.google.com/forms/d/e/1FAIpQLSc1t_CBhQsv3jGwZYzPinpLLDDExHXOfW_W70dpObMvVuC_dQ/viewform" 
-                   class="waitlist-button" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                    Join Our Waiting List
-                </a>
+                <p><strong>Foundation Classes:</strong> New members are required to complete our foundation classes. These classes introduce you to proper techniques, safety measures, and the basics of our strength training program. This ensures you have a strong foundation to build upon in our regular classes.</p>
             </div>
+            <p>We prioritize your safety and success in our program. These steps help us provide the best possible experience and results for each participant. If you have any questions about the enrollment process, please don't hesitate to contact us.</p>
         </section>
 
-        <section id="schedule" class="mb-5" aria-labelledby="schedule-heading">
-            <h2 id="schedule-heading">Class Schedule</h2>
-            <script src="https://widgets.mindbodyonline.com/javascripts/healcode.js" type="text/javascript"></script>
-            <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="f52092443272" data-widget-version="1"></healcode-widget>
+        <section id="book-class" class="my-5">
+            <h2>Book a Class!</h2>
+            <p>Ready to join us for a session? Click the button below to view our class schedule and book your spot.</p>
+            <button id="toggleScheduleBtn" btn btn-primary>Show Class Schedule</button>
+            <div id="scheduleWidget"></div>
         </section>
 
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact Us</h2>
-            <p>Ready to get started? Contact our owner and head coach, Bonnie Campbell:</p>
+        
+
+
+
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or ready to get started? Contact our owner and head coach, Bonnie Campbell:</p>
             <ul class="list-unstyled">
                 <li><strong>Email:</strong> <a href="mailto:bleithcampbell@gmail.com">bleithcampbell@gmail.com</a></li>
             </ul>
@@ -190,5 +161,34 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('toggleScheduleBtn').addEventListener('click', function() {
+            var widget = document.getElementById('scheduleWidget');
+            if (widget.style.display === 'none' || widget.style.display === '') {
+                widget.style.display = 'block';
+                this.textContent = 'Hide Class Schedule';
+                
+                if (widget.children.length === 0) {
+                    // Load the MindBody widget
+                    var script = document.createElement('script');
+                    script.src = 'https://widgets.mindbodyonline.com/javascripts/healcode.js';
+                    script.type = 'text/javascript';
+                    document.head.appendChild(script);
+
+                    script.onload = function() {
+                        var healcodeWidget = document.createElement('healcode-widget');
+                        healcodeWidget.setAttribute('data-type', 'schedules');
+                        healcodeWidget.setAttribute('data-widget-partner', 'object');
+                        healcodeWidget.setAttribute('data-widget-id', 'f52092443272');
+                        healcodeWidget.setAttribute('data-widget-version', '1');
+                        widget.appendChild(healcodeWidget);
+                    };
+                }
+            } else {
+                widget.style.display = 'none';
+                this.textContent = 'Show Class Schedule';
+            }
+        });
+    </script>
 </body>
 </html>
